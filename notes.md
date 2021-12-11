@@ -8,10 +8,10 @@ Technical tasks
 
 [ ] Project setup
     [x] index.html
-    [ ] stylesheet - style.css
-    [ ] jquery
-    [ ] javascript - script.js
-    [ ] README/note.md
+    [x] stylesheet - style.css
+    [x] jquery
+    [x] javascript - script.js
+    [x] README/note.md
 [ ] HTML mockup
 [ ] Add employess to the spreedsheet
     [ ] Design form with employee firstname, lastname, ID, tittle, annual salary
