@@ -9,7 +9,93 @@
     <script src="jquery-3.6.0.js"></script>
     <script src="client.js"></script>
 </head>
+
 <body>
     <h1>Salary Calculator</h1>
+
+    <h2>Add Employee</h2>
+
+    <!-- Add detail form -->
+    <form>
+        <!-- First Name Input-->
+        <input
+            id="firstNameInput"
+            type="text"
+            placeholder="First Name"
+        />
+        <!-- Last Name Input-->
+        <input
+            id="lastNameInput"
+            type="text"
+            placeholder="Last Name"
+        />
+        <!-- ID Input-->
+        <input
+            id="idInput"
+            type="number"
+            placeholder="ID"
+        />
+        <!-- Tittle Input-->
+        <select id="tittleImput">
+            <option>Team Lead</option>            
+            <option>Support Team</option>            
+            <option>Quality Ass</option>            
+        </select>        
+        <!-- Annual Salary Input-->
+        <input
+            id="annualSalaryInput"
+            type="number"
+            placeholder="Annual Salary"
+        />
+        <!-- Submit Botton-->
+        <input
+            type="submit"
+        />
+    </form>
+    
+    <h3>Employees</h3>
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Annual Salary</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Jen</td>
+            <td>Barber</td>
+            <td>4521</td>
+            <td>Team Lead</td>
+            <td>$80,000</td>
+            <td>
+                <button class="DeleteBtn">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Maurice</td>
+            <td>Moss</td>
+            <td>8724</td>
+            <td>Support Team</td>
+            <td>$58,000</td>
+            <td>
+                <button class="DeleteBtn">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Roy</td>
+            <td>Smith</td>
+            <td>9623</td>
+            <td>Quality Ass</td>
+            <td>$48,000</td>
+            <td>
+                <button class="DeleteBtn">Delete</button>
+            </td>
+        </tr>
+          
+    </table>
+
 </body>
 </html>
