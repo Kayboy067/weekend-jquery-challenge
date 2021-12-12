@@ -15,8 +15,8 @@ Technical tasks
 [x] HTML mockup
 [ ] Add employess to the spreedsheet
     [x] Design form with employee firstname, lastname, ID, tittle, annual salary
-    [ ] Add a click event button
-    [ ] Render the new item to the DOM
+    [x] Add a click event button
+    [x] Render the new item to the DOM
 [ ] Delete an employee from the list
     [ ] Delete clicked botton
     [ ] Remove item from the DOM
