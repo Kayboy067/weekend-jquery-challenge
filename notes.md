@@ -12,10 +12,10 @@ Technical tasks
     [x] jquery
     [x] javascript - script.js
     [x] README/note.md
-[ ] HTML mockup
+[x] HTML mockup
 [ ] Add employess to the spreedsheet
-    [ ] Design form with employee firstname, lastname, ID, tittle, annual salary
-    [ ] Add a click button
+    [x] Design form with employee firstname, lastname, ID, tittle, annual salary
+    [ ] Add a click event button
     [ ] Render the new item to the DOM
 [ ] Delete an employee from the list
     [ ] Delete clicked botton
