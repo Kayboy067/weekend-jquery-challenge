@@ -6,6 +6,7 @@ let salary = [];
 function onReady() {
     console.log('on ready');
 
+    // activating the submit botton to add employee
     $('#employeeForm').on('submit', onAddEmployee);
 
     // Activate delete clicked botton
@@ -44,10 +45,12 @@ function onAddEmployee(action) {
     salary.push(employeeObj);
     console.log('Salary', salary);
 
+    // emptying <tbody> before rendring to the DOM
     $('#employeeList').empty()
 
 
-
+    // looping through employee to append 
+    // employee object to the DOM
     for (let employee of salary) {
         $('#employeeList').append(`
         <tr>
