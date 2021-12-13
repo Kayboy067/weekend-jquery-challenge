@@ -8,36 +8,59 @@ function onReady() {
 
     // activating the submit botton to add employee
     $('#employeeForm').on('submit', onAddEmployee);
+    $('#employeeForm').on('submit', totalSalary);
 
     // Activate delete clicked botton
+    //$(document).on('click', '.DeleteBtn', onDeleteEmployee);
     $(document).on('click', '.DeleteBtn', onDeleteEmployee);
-}
+} // en function onReady
+
+function totalSalary() {
+    console.log('in function totalSalary');
+    let sum = 0;
+    for (let i = 0; i < salary.length; i++){
+        sum += salary[i].annualSalary
+    }
+    console.log('total sum is', sum)
+    // make sure to empty the spot
+    $('#total').text('')
+    // append to the empty slot
+    $('#total').append(`Total Salary: $${sum}`) // total salary fixed
+    // I need help deleting the added salary
+    // when employee is deleted
+    
+} // end function totalSalary
+
 
 function onDeleteEmployee() {
     console.log('onDeleteEmployee');
 
     $(this).parents('tr').remove();
-}
+    salary.splice($(this),1);
+    
+} //end function onDeleteEmployee
 
 function onAddEmployee(action) {
     //Prevent form from reloading
     action.preventDefault();
 
     console.log('add employee');
-
+    
+    //rendering the form vaule to the DOM
     let firstName = $('#firstNameInput').val();
     let lastName = $('#lastNameInput').val();
     let id = $('#idInput').val();
     let title = $('#titleImput').val();
     let annualSalary = Number($('#annualSalaryInput').val());
-
+    
+    //created employee object
     let employeeObj = {
         firstName: firstName,
         lastName: lastName,
         id: id,
         title: title,
         annualSalary: annualSalary
-    }
+    } // end employee object
 
     console.log('New employee salary', employeeObj);
 
@@ -58,15 +81,12 @@ function onAddEmployee(action) {
                 <td>${employee.lastName}</td>
                 <td>${employee.id}</td>
                 <td>${employee.title}</td>
-                <td>$${annualSalary}</td>
+                <td>$${employee.annualSalary}</td>
                 <td>
                     <button class="DeleteBtn">Delete</button>
                 </td>
             </tr>
         `);
-   
-        
-    }
+    } // end for loop
 
-
-}
+} // end onAddEmployee
